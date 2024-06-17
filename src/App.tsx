@@ -1,24 +1,30 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Carousel from './components/Carousel';
 
 function App() {
+
+  const imagearray = [
+    'https://via.placeholder.com/800x400/ff5733/fff',
+    'https://via.placeholder.com/800x400/33ff57/fff',
+    'https://via.placeholder.com/800x400/5733ff/fff',
+    'https://via.placeholder.com/800x400/ff5733/fff',
+    'https://via.placeholder.com/800x400/33ff57/fff',
+    'https://via.placeholder.com/800x400/5733ff/fff',
+    'https://via.placeholder.com/800x400/ff5733/fff',
+    'https://via.placeholder.com/800x400/33ff57/fff',
+    'https://via.placeholder.com/800x400/5733ff/fff',
+    'https://via.placeholder.com/800x400/ff5733/fff',
+    'https://via.placeholder.com/800x400/33ff57/fff',
+    'https://via.placeholder.com/800x400/5733ff/fff',
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app_header">
+        <Carousel images={imagearray} />
+      </div>
     </div>
   );
 }
